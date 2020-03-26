@@ -42,7 +42,7 @@ def c_sequence(type,sequence):
 def insert_finder(sequence_type, sequence, insert_sequence):
     c_insert_sequence=c_sequence(sequence_type,insert_sequence)
     position=-1
-    for i in range(len(sequence)-len(insert_sequence)):
+    for i in range(len(sequence)-len(insert_sequence)+1):
         if sequence[i:i+len(insert_sequence)]==insert_sequence:
             position=i
             break
@@ -50,7 +50,7 @@ def insert_finder(sequence_type, sequence, insert_sequence):
             position=i
             break
 #    c_sequence=c_sequence(sequence_type,sequence)
-#    for i in range(len(c_sequence)-len(c_insert_sequence)):
+#    for i in range(len(c_sequence)-len(c_insert_sequence)+1):
 #        if c_sequence[i:i+len(insert_sequence)]==insert_sequence:
 #            position=i
 #            break
