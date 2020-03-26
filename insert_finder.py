@@ -28,7 +28,7 @@ def c_sequence(type,sequence):
                 c_sequence+='U'
             elif sequence[i]=='U':
                 c_sequence+='A'
-        if type=="DNA":
+        elif type=="DNA":
             if sequence[i]=='G':
                 c_sequence+='C'                                
             elif sequence[i]=='C':
