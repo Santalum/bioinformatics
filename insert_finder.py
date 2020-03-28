@@ -58,6 +58,6 @@ def insert_finder(sequence_type, sequence, insert_sequence):
 #            position=i
 #            break
     if position!=-1:
-        return position,position+len(c_insert_sequence)-1
+        return position,position+len(c_insert_sequence)
     else:
         return "Error, insert not found in sequence."
